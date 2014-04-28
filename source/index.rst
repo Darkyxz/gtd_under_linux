@@ -42,6 +42,16 @@ Blending the Digital and Physical
 - Filing cabinet
 - Notepads / Moleskine / Fieldnotes (etc)
 
+Physical Inbox (an object lesson)
+=================================
+.. figure:: /_static/pre_inbox.jpg
+   :class: fill
+
+Physical Inbox (an object lesson)
+=================================
+.. figure:: /_static/post_inbox.jpg
+   :class: fill
+
 Key parts of a system
 =====================
 .. rst-class:: build
