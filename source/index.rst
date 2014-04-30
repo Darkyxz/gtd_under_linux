@@ -13,8 +13,11 @@ What is GTD?
 .. rst-class:: build
 - GTD & Getting Things Done are registered trademarks of the David Allen Company.
 - Commonly referred to as "Time Management".
-- Really is a system for "Life Management" and "Focus Management"....
-- Completely technology independent.
+- Really is a system for "Life Management" and "Focus Management".
+- Completely technology independent (can use paper, computer, etc.)
+
+Why do GTD at all?
+==================
 
 Brief recap of GTD
 ==================
@@ -27,28 +30,26 @@ Brief recap of GTD
 - Reflect (Review)
 - Engage (Do)
 
-What's the point?
-=================
 
 Getting Started
 ===============
 
-Blending the Digital and Physical
-=================================
-
+Tools
+=====
 .. rst-class:: build
 
-- Physical and Digital inboxes
+- Physical and Digital inboxes 
+- (Yes, physical is NOT Optional. :))
 - Filing cabinet
 - Notepads / Moleskine / Fieldnotes (etc)
 
-Physical Inbox (an object lesson)
-=================================
+Why Physical?
+=============
+.. nextslide::
 .. figure:: /_static/pre_inbox.jpg
    :class: fill
 
-Physical Inbox (an object lesson)
-=================================
+.. nextslide:: 
 .. figure:: /_static/post_inbox.jpg
    :class: fill
 
@@ -60,15 +61,6 @@ Key parts of a system
 - Flexible
 - Context-based filtering
 - Fun to use
-
-Why text files?
-===============
-.. rst-class:: build
-- Fast
-- Flexible
-- Fun to use
-- Can be edited with vim (or any text editor)
-- Easy to parse with UNIX tools
 
 Why Todotxt?
 ============
