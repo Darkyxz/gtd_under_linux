@@ -93,6 +93,16 @@ Why Todotxt?
 - Can be edited with vim (or any text editor)
 - Easy to parse with UNIX tools
 
+What is Todo.txt?
+=================
+.. rst-class:: build
+- A standardized text file-format for Next Actions
+- A collection of applications for interfacing with a todo.txt file
+- Cross-platform (CLI / Android / iOS)
+- Developed by Gina Trapani and a dedicated community
+- Free Software / Open Source
+- Card-carrying Bad Ass Awesome
+
 Basic Todotxt usage
 ===================
 Adding a record::
@@ -150,6 +160,11 @@ Todotxt can list on any keyword::
    --
    TODO: 5 of 187 tasks shown
 
+Bash Aliases
+============
+
+    ``alias ta='todo.sh'``
+
 Basic Todotxt usage
 ===================
 
@@ -182,11 +197,21 @@ Projects under Todotxt
 ======================
 
 .. rst-class:: build
+- Unfortunately, Todotxt doesn't have great project support baked in
 - Limited to ``+project_name``
 - Better served as keywords than a project list
 - (I use a separate @projects context for my projects list)
 
 Projects under Todotxt
 ======================
+Project list best practice::
 
+    t add Convert +penguicon slides to Heiroglyph @project
+    t add Edit index.rst to copy the +penguicon slides over @computer
+    t add Copy images for the +penguicon presentation to _static @computer
 
+    craig@bluemidget:~$ t ls +penguicon
+    188 Convert +penguicon slides to Heiroglyph @project
+    190 Copy images for the +penguicon presentation to _static @computer
+    187 Draft up a presentation for GTD at +penguicon @computer
+    189 Edit index.rst to copy the +penguicon slides over @computer
