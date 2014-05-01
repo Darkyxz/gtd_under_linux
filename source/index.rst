@@ -25,20 +25,33 @@ What is GTD?
 ============
 
 .. rst-class:: build
+
 - GTD & Getting Things Done are registered trademarks of the David Allen Company.
 - Commonly referred to as "Time Management".
 - Really is a system for "Life Management" and "Focus Management".
 - Completely technology independent (can use paper, computer, etc.)
 
-Why do GTD at all?
-==================
+Key elements of GTD
+===================
+.. rst-class:: build
 
-Getting Started
-===============
+- Capture everything that has your attention (inbox)
+- Context-based: Filter based on what can you do at this moment
+- Next Action list: List of physical actions to complete projects
+- Project list: List of "successful outcomes"
+- Calendar for "hard landscape" (appointments, day reminders).
+- Waiting-for list (for items that you're waiting on other folks)
 
-Brief recap of GTD
-==================
+Key elements of GTD
+===================
+.. rst-class:: build
 
+- Weekly review: system maintenance
+- Horizons of focus (Roles, 1-5 year goals and plans, and life's-purpose)
+- Someday / Maybe list (items you aren't committed to, but want to remember)
+
+Brief recap of Five Phases of Work
+==================================
 .. rst-class:: build
 
 - Capture (Collect)
@@ -49,6 +62,11 @@ Brief recap of GTD
 
 Capturing
 =========
+.. rst-class:: build
+
+- Any thought you have more than once should be captured
+- Write it down!
+- Meaning comes later. For now just dump.
 
 My Capture Tools
 ================
@@ -72,20 +90,103 @@ Why Physical?
 
 Clarifying (Processing)
 =======================
+.. rst-class:: build
+
+- What is it? What's the next action?
+- Two minute rule: If you can finish in less than two minutes, do it.
+- One at a time: no batching
+- Is it actionable? Reference? Trash?
+- Nothing goes back into the in basket
+
+Inbox Zero
+==========
+
+Organizing
+==========
+- No action?
+
+  * Want to keep it? Reference.
+  * Maybe want to do later? Someday / Maybe
+  * Don't want / need it? **throw it out**
+
+Organizing
+==========
+- Actionable?
+
+  * If more than one action, project list
+  * Single action? Next Action list (with context)
+  * Day-specific event? Calendar
+  * Waiting for something to happen? Waiting for List.
+
+Contexts
+========
+.. rst-class:: build
+
+- Physical location where you can do something
+- Example contexts
+
+  * @computer
+  * @home 
+  * @calls
+  * agenda
+  * @office
+  * @errands
+
+Reflect (Review)
+================
+.. rst-class:: build
+
+- Review lists for next actions and things to check off
+- Review project lists as needed to see what needs updating / completing
+- Reference material for projects
+- Mind sweep (anything that may need capturing)
+- Occasionally: higher altitudes
+
+Weekly Review: an aside
+=======================
+
+Engage (Do)
+===========
+.. rst-class:: build
+
+- Filter by:
+
+  * Context (what can I do?)
+  * Time available (what time do I have available?)
+  * Energy (am I alert, or am I toast?)
+  * Priority (Do you smell something burning?)
+
+Engage (Do)
+===========
+.. rst-class:: build
+
+- Three-fold nature of work:
+  
+  * Pre-defined work (Next action lists)
+  * Defining your work (know ALL your work)
+  * As it shows up (can lead to "busy-trap")
+
 
 Key parts of a GTD system
 =========================
 .. rst-class:: build
+
 
 - Context-based filtering
 - Fast
 - Flexible
 - Fun to use
 
+Todo.txt
+========
+.. image:: /_static/todotxt-apps_lrg.png 
+    :align: right
+
 Why Todotxt?
 ============
 
 .. rst-class:: build
+
 - Context-based filtering
 - Fast
 - Flexible
@@ -96,6 +197,7 @@ Why Todotxt?
 What is Todo.txt?
 =================
 .. rst-class:: build
+
 - A standardized text file-format for Next Actions
 - A collection of applications for interfacing with a todo.txt file
 - Cross-platform (CLI / Android / iOS)
@@ -187,6 +289,7 @@ Prioritize a next action::
 Getting Things Done: Projects
 =============================
 .. rst-class:: build
+
 - "Outcomes I want to have happen" list
 - Clear statement of what you want to have true when complete:
 
@@ -198,6 +301,7 @@ Projects under Todotxt
 ======================
 
 .. rst-class:: build
+
 - Unfortunately, Todotxt doesn't have great project support baked in
 - Limited to ``+project_name``
 - Better served as keywords than a project list
@@ -217,18 +321,85 @@ Project list best practice::
     187 Draft up a presentation for GTD at +penguicon @computer
     189 Edit index.rst to copy the +penguicon slides over @computer
 
-Organizing
+Waiting for:
+============
+Making a "waiting for" next action::
+
+    craig@gaplus:~$ t do 196
+    196 x 2014-05-01 Put the final touches on the quarterly report for John @office
+    TODO: 196 marked as done.
+    x 2014-05-01 Put the final touches on the quarterly report for John @office
+    TODO: /home/craig/Dropbox/todo/todo.txt archived.
+    craig@gaplus:~$ t add John: OK with the quarterly report formatting / numbers @waiting
+    195 John: OK with the quarterly report formatting / numbers @waiting
+    TODO: 195 added.
+
+List projects (tags)
+====================
+List the projects (tags)::
+
+    craig@gaplus:~$ t lsprj
+    +159
+    +166
+    +33
+    +789
+    +811
+    +970
+    +974
+    +mug
+    +openlab
+    +penguicon
+    +project_notes
+
+Handy Addons
+============
+
+- schedule
+- recur
+- edit
+- More at: https://github.com/ginatrapani/todo.txt-cli/wiki/Todo.sh-Add-on-Directory
+
+Schedule
+========
+Add dates to next actions::
+
+  craig@gaplus:~$ t ls +penguicon
+  188 Convert +penguicon slides to Heiroglyph @project
+  190 Copy images for the +penguicon presentation to _static @computer
+  187 Draft up a presentation for GTD at +penguicon @computer
+  189 Edit index.rst to copy the +penguicon slides over @computer
+  --
+  TODO: 4 of 194 tasks shown
+  craig@gaplus:~$ t schedule 190 thu
+  190 Copy images for the +penguicon presentation to _static @computer due:2014-05-01
+
+  craig@gaplus:~$ t v due +penguicon
+  =====  Dates  =====
+
+  ---  2014-05-01  ---
+  190 Copy images for the +penguicon presentation to _static @computer
+
+Recur
+=====
+- Recurring tasks (best with cron)
+
+recur.txt::
+  daily: Scoop Pixel's Poops @home
+  daily: Journal for 10 minutes today using jrnl or paper / pen @computer @home
+  friday: Ensure my timesheet is up to date and current @office
+
+Running recur::
+
+  craig@lister:~$ t recur
+  194 Scoop Pixel's Poops @home
+  TODO: 194 added.
+
+Someday / Maybe
+===============
+.. figure:: /_static/evernote.png
+   :class: fill
+
+Questions?
 ==========
 .. image:: /_static/todotxt-apps_lrg.png 
     :align: right
-
-Reflect (Review)
-================
-.. image:: /_static/todotxt-apps_lrg.png 
-    :align: right
-
-Engage (Do)
-===========
-.. image:: /_static/todotxt-apps_lrg.png 
-    :align: right
-
