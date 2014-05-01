@@ -102,6 +102,7 @@ What is Todo.txt?
 - Developed by Gina Trapani and a dedicated community
 - Free Software / Open Source
 - Card-carrying Bad Ass Awesome
+- (Available at http://todotxt.com)
 
 Basic Todotxt usage
 ===================
@@ -163,7 +164,7 @@ Todotxt can list on any keyword::
 Bash Aliases
 ============
 
-    ``alias ta='todo.sh'``
+    ``alias t='todo.sh'``
 
 Basic Todotxt usage
 ===================
@@ -215,3 +216,19 @@ Project list best practice::
     190 Copy images for the +penguicon presentation to _static @computer
     187 Draft up a presentation for GTD at +penguicon @computer
     189 Edit index.rst to copy the +penguicon slides over @computer
+
+Organizing
+==========
+.. image:: /_static/todotxt-apps_lrg.png 
+    :align: right
+
+Reflect (Review)
+================
+.. image:: /_static/todotxt-apps_lrg.png 
+    :align: right
+
+Engage (Do)
+===========
+.. image:: /_static/todotxt-apps_lrg.png 
+    :align: right
+
