@@ -9,6 +9,23 @@ Doing "Getting Things Done" under Linux
 
 :website: http://decafbad.net
 
+GTD Under Linux
+===============
+.. figure:: /_static/482225177_c083cff10f_o.jpg
+   :class: fill
+
+   http://www.flickr.com/photos/60849961@N00/482225177/ (BY-NC-ND)
+
+
+Confession
+==========
+- Won't cover Tracks as much as I thought I might
+
+  * http://getontracks.org
+
+Recap of Getting Things Done
+============================
+
 Getting Things Done
 ===================
 .. image:: /_static/Getting_Things_Done.jpg
@@ -40,12 +57,12 @@ Key elements of GTD
 - Next Action list: List of physical actions to complete projects
 - Project list: List of "successful outcomes"
 - Calendar for "hard landscape" (appointments, day reminders).
-- Waiting-for list (for items that you're waiting on other folks)
 
 Key elements of GTD
 ===================
 .. rst-class:: build
 
+- Waiting-for list (for items that you're waiting on other folks)
 - Weekly review: system maintenance
 - Horizons of focus (Roles, 1-5 year goals and plans, and life's-purpose)
 - Someday / Maybe list (items you aren't committed to, but want to remember)
@@ -107,7 +124,7 @@ Organizing
 
   * Want to keep it? Reference.
   * Maybe want to do later? Someday / Maybe
-  * Don't want / need it? **throw it out**
+  * Don't want / need it? **Throw it out**
 
 Organizing
 ==========
@@ -128,7 +145,7 @@ Contexts
   * @computer
   * @home 
   * @calls
-  * agenda
+  * @agenda
   * @office
   * @errands
 
@@ -144,6 +161,15 @@ Reflect (Review)
 
 Weekly Review: an aside
 =======================
+
+In other words
+==============
+
+DO YOUR WEEKLY REVIEW
+=====================
+
+DO YOUR WEEKLY REVIEW (Weekly)
+==============================
 
 Engage (Do)
 ===========
@@ -370,6 +396,12 @@ Add dates to next actions::
   189 Edit index.rst to copy the +penguicon slides over @computer
   --
   TODO: 4 of 194 tasks shown
+
+
+Schedule
+========
+Add dates to next actions::
+
   craig@gaplus:~$ t schedule 190 thu
   190 Copy images for the +penguicon presentation to _static @computer due:2014-05-01
 
@@ -384,8 +416,8 @@ Recur
 - Recurring tasks (best with cron)
 
 recur.txt::
+
   daily: Scoop Pixel's Poops @home
-  daily: Journal for 10 minutes today using jrnl or paper / pen @computer @home
   friday: Ensure my timesheet is up to date and current @office
 
 Running recur::
@@ -394,12 +426,58 @@ Running recur::
   194 Scoop Pixel's Poops @home
   TODO: 194 added.
 
+Higher levels of focus
+======================
+Text files::
+
+    craig@gaplus:~/gtd/weekly_review$ ls *rst
+    20k-areas-of-focus.rst
+    30k-1-2-year-goals.rst
+    40k-vision.rst
+    50k-purpose.rst
+    setting_goals.rst
+    weekly_review_checklist.rst
+    work_goals_2013.rst
+
 Someday / Maybe
 ===============
 .. figure:: /_static/evernote.png
    :class: fill
 
+What's the point of all this?
+=============================
+.. rst-class:: build
+
+- Keep things off your mind
+- Be present
+- Know what you need to do
+- Know what you're not doing
+
 Questions?
 ==========
 .. image:: /_static/todotxt-apps_lrg.png 
     :align: right
+
+Links
+=====
+- http://gettingthingsdone.com
+- http://todotxt.com
+- http://getontracks.org
+- http://evernote.com
+
+Google+ Community
+=================
+.. image:: /_static/google_plus.png
+    :align: right
+
+
+
+Thank you!
+==========
+
+=======================================
+Doing "Getting Things Done" under Linux
+=======================================
+:author: Craig Maloney <craig@decafbad.net>
+
+:website: http://decafbad.net
