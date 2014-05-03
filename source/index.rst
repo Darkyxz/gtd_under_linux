@@ -23,6 +23,20 @@ Confession
 
   * http://getontracks.org
 
+Sunday, 10am
+============
+.. figure::  /_static/5652854727_3bebef04d2_o.jpg
+   :class: fill
+
+   https://www.flickr.com/photos/gertcha/5652854727 (CC BY-ND)
+
+Monday, 10am
+============
+.. figure:: /_static/4399026294_1f3906969d_o.jpg
+   :class: fill
+
+   https://www.flickr.com/photos/mandy_pantz/4399026294 (CC BY)
+
 Recap of Getting Things Done
 ============================
 
