@@ -351,12 +351,12 @@ Projects under Todotxt
 ======================
 Project list best practice::
 
-    t add Convert +penguicon slides to Heiroglyph @project
+    t add Convert +penguicon slides to Hieroglyph @project
     t add Edit index.rst to copy the +penguicon slides over @computer
     t add Copy images for the +penguicon presentation to _static @computer
 
     craig@bluemidget:~$ t ls +penguicon
-    188 Convert +penguicon slides to Heiroglyph @project
+    188 Convert +penguicon slides to Hieroglyph @project
     190 Copy images for the +penguicon presentation to _static @computer
     187 Draft up a presentation for GTD at +penguicon @computer
     189 Edit index.rst to copy the +penguicon slides over @computer
@@ -404,7 +404,7 @@ Schedule
 Add dates to next actions::
 
   craig@gaplus:~$ t ls +penguicon
-  188 Convert +penguicon slides to Heiroglyph @project
+  188 Convert +penguicon slides to Hieroglyph @project
   190 Copy images for the +penguicon presentation to _static @computer
   187 Draft up a presentation for GTD at +penguicon @computer
   189 Edit index.rst to copy the +penguicon slides over @computer
