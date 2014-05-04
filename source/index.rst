@@ -16,13 +16,6 @@ GTD Under Linux
 
    http://www.flickr.com/photos/60849961@N00/482225177/ (BY-NC-ND)
 
-
-Confession
-==========
-- Won't cover Tracks as much as I thought I might
-
-  * http://getontracks.org
-
 Sunday, 10am
 ============
 .. figure::  /_static/5652854727_3bebef04d2_o.jpg
@@ -36,6 +29,14 @@ Monday, 10am
    :class: fill
 
    https://www.flickr.com/photos/mandy_pantz/4399026294 (CC BY)
+
+The game of work and life
+=========================
+
+.. figure:: /_static/690199720_6f82dc7f61_o.jpg
+   :class: fill
+
+   https://www.flickr.com/photos/monkeyshine/690199720 (CC BY-NC-ND)
 
 Recap of Getting Things Done
 ============================
@@ -80,6 +81,17 @@ Key elements of GTD
 - Weekly review: system maintenance
 - Horizons of focus (Roles, 1-5 year goals and plans, and life's-purpose)
 - Someday / Maybe list (items you aren't committed to, but want to remember)
+
+Single system
+=============
+.. rst-class:: build
+
+- Single system for both work and home
+- (Your life is more than just your "work")
+- One system to maintain is hard enough
+- Allows you to think of work with your other projects / higher levels of focus.
+- Put more strongly...
+- **Don't make a separate work system**
 
 Brief recap of Five Phases of Work
 ==================================
