@@ -1,6 +1,5 @@
 .. Doing Getting Things Done under Linux slides file, created by
-   hieroglyph-quickstart on Tue Apr 22 22:27:41 2014.
-
+   hieroglyph-quickstart on Tue Apr 22 22:27:41 2015.
 
 =======================================
 Doing "Getting Things Done" under Linux
@@ -16,15 +15,16 @@ GTD Under Linux
 
    http://www.flickr.com/photos/60849961@N00/482225177/ (BY-NC-ND)
 
-Sunday, 10am
-============
+Sunday, 9am
+===========
 .. figure::  /_static/5652854727_3bebef04d2_o.jpg
    :class: fill
+   :scale: 100
 
    https://www.flickr.com/photos/gertcha/5652854727 (CC BY-ND)
 
-Monday, 10am
-============
+Monday, 9am
+===========
 .. figure:: /_static/4399026294_1f3906969d_o.jpg
    :class: fill
 
@@ -116,7 +116,8 @@ My Capture Tools
 .. rst-class:: build
 
 - Email inboxes (home and work)
-- Evernote / Text Files
+- TagSpaces / Draft / Text Files
+- CamScanner
 - Physical Inbox
 - (Yes, physical is NOT Optional. :))
 - Notepads / Moleskine / Fieldnotes (etc)
@@ -143,6 +144,11 @@ Clarifying (Processing)
 
 Inbox Zero
 ==========
+
+Virtual Inbox
+=============
+.. figure:: /_static/tagspaces_someday.png
+   :class: fill
 
 Organizing
 ==========
@@ -279,9 +285,9 @@ Basic Todotxt usage
 Mark a Next Action as done:: 
 
    $ todo.sh do 187
-   187 x 2014-04-30 Draft up a presentation for GTD at +penguicon @computer
+   187 x 2015-04-30 Draft up a presentation for GTD at +penguicon @computer
    TODO: 187 marked as done.
-   x 2014-04-30 Draft up a presentation for GTD at +penguicon @computer
+   x 2015-04-30 Draft up a presentation for GTD at +penguicon @computer
    TODO: /home/craig/Dropbox/todo/todo.txt archived.
 
 Basic Todotxt usage
@@ -297,7 +303,7 @@ List contexts currently in use::
     @errands
     @home
     @office
-    @project
+    @parents
     @read
     @waiting
 
@@ -310,8 +316,8 @@ Todotxt can list on any keyword::
    186 Bring in the luggage for Penguicon packing @home
    187 Draft up a presentation for GTD at +penguicon @computer
    162 Flesh out the slide outline for the GTD under Linux slides for Penguicon @computer
-   067 Plan for Penguicon 2014 @project
-   076 Present a GTD under Linux presentation at Penguicon @project
+   067 Plan for Penguicon 2015 +project
+   076 Present a GTD under Linux presentation at Penguicon +project
    --
    TODO: 5 of 187 tasks shown
 
@@ -333,8 +339,8 @@ Prioritize a next action::
     186 (A) Bring in the luggage for Penguicon packing @home
     187 Draft up a presentation for GTD at +penguicon @computer
     162 Flesh out the slide outline for the GTD under Linux slides for Penguicon @computer
-    067 Plan for Penguicon 2014 @project
-    076 Present a GTD under Linux presentation at Penguicon @project
+    067 Plan for Penguicon 2015 +project
+    076 Present a GTD under Linux presentation at Penguicon +project
     --
     TODO: 5 of 187 tasks shown
 
@@ -357,18 +363,18 @@ Projects under Todotxt
 - Unfortunately, Todotxt doesn't have great project support baked in
 - Limited to ``+project_name``
 - Better served as keywords than a project list
-- (I use a separate @projects context for my projects list)
+- (I use a separate ``+project`` project tag for my projects list)
 
 Projects under Todotxt
 ======================
 Project list best practice::
 
-    t add Convert +penguicon slides to Hieroglyph @project
+    t add Convert +penguicon slides to Hieroglyph +project
     t add Edit index.rst to copy the +penguicon slides over @computer
     t add Copy images for the +penguicon presentation to _static @computer
 
     craig@bluemidget:~$ t ls +penguicon
-    188 Convert +penguicon slides to Hieroglyph @project
+    188 Convert +penguicon slides to Hieroglyph +project
     190 Copy images for the +penguicon presentation to _static @computer
     187 Draft up a presentation for GTD at +penguicon @computer
     189 Edit index.rst to copy the +penguicon slides over @computer
@@ -378,9 +384,9 @@ Waiting for:
 Making a "waiting for" next action::
 
     craig@gaplus:~$ t do 196
-    196 x 2014-05-01 Put the final touches on the quarterly report for John @office
+    196 x 2015-04-23 Put the final touches on the quarterly report for John @office
     TODO: 196 marked as done.
-    x 2014-05-01 Put the final touches on the quarterly report for John @office
+    x 2015-04-23 Put the final touches on the quarterly report for John @office
     TODO: /home/craig/Dropbox/todo/todo.txt archived.
     craig@gaplus:~$ t add John: OK with the quarterly report formatting / numbers @waiting
     195 John: OK with the quarterly report formatting / numbers @waiting
@@ -416,7 +422,7 @@ Schedule
 Add dates to next actions::
 
   craig@gaplus:~$ t ls +penguicon
-  188 Convert +penguicon slides to Hieroglyph @project
+  188 Convert +penguicon slides to Hieroglyph +project
   190 Copy images for the +penguicon presentation to _static @computer
   187 Draft up a presentation for GTD at +penguicon @computer
   189 Edit index.rst to copy the +penguicon slides over @computer
@@ -429,12 +435,12 @@ Schedule
 Add dates to next actions::
 
   craig@gaplus:~$ t schedule 190 thu
-  190 Copy images for the +penguicon presentation to _static @computer due:2014-05-01
+  190 Copy images for the +penguicon presentation to _static @computer due:2015-04-23
 
   craig@gaplus:~$ t v due +penguicon
   =====  Dates  =====
 
-  ---  2014-05-01  ---
+  ---  2015-04-23  ---
   190 Copy images for the +penguicon presentation to _static @computer
 
 Recur
@@ -454,20 +460,12 @@ Running recur::
 
 Higher levels of focus
 ======================
-Text files::
-
-    craig@gaplus:~/gtd/weekly_review$ ls *rst
-    20k-areas-of-focus.rst
-    30k-1-2-year-goals.rst
-    40k-vision.rst
-    50k-purpose.rst
-    setting_goals.rst
-    weekly_review_checklist.rst
-    work_goals_2013.rst
+.. figure:: /_static/tagspaces_higher_levels.png
+    :class: fill
 
 Someday / Maybe
 ===============
-.. figure:: /_static/evernote.png
+.. figure:: /_static/tagspaces_someday.png
    :class: fill
 
 What's the point of all this?
@@ -489,14 +487,12 @@ Links
 - http://gettingthingsdone.com
 - http://todotxt.com
 - http://getontracks.org
-- http://evernote.com
+- http://www.tagspaces.org/
 
 Google+ Community
 =================
 .. image:: /_static/google_plus.png
     :align: right
-
-
 
 Thank you!
 ==========
