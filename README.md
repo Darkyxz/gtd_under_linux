@@ -7,3 +7,6 @@ You'll need Pyton and the Hieroglyph package to compile these. The easiest way t
 
     pip install hieroglyph
 
+Create the slides by running:
+    
+    make slides
